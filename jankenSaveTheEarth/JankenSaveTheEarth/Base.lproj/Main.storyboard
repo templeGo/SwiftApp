@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="JankenSaveTheEarth" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="じゃん…！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sm1-W7-21B">
+                                <rect key="frame" x="0.0" y="51" width="375" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="Zns-bf-cth"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9hb-UA-TYl">
+                                <rect key="frame" x="18" y="241" width="338" height="331"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  PON！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zWT-qW-Fp8">
+                                <rect key="frame" x="0.0" y="156" width="375" height="45"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="37"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" けん…！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vyf-fB-RaJ">
+                                <rect key="frame" x="0.0" y="103" width="375" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97305089235305786" green="0.88019702954009715" blue="0.18421637093775706" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Sm1-W7-21B" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="22d-SF-Ymp"/>
+                            <constraint firstItem="Sm1-W7-21B" firstAttribute="trailing" secondItem="vyf-fB-RaJ" secondAttribute="trailing" id="2aY-DF-ntT"/>
+                            <constraint firstItem="9hb-UA-TYl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="18" id="4xh-xM-9YS"/>
+                            <constraint firstItem="vyf-fB-RaJ" firstAttribute="top" secondItem="Sm1-W7-21B" secondAttribute="bottom" constant="19" id="6iV-rR-xl1"/>
+                            <constraint firstAttribute="trailing" secondItem="Sm1-W7-21B" secondAttribute="trailing" id="7Uy-Pp-tIx"/>
+                            <constraint firstItem="9hb-UA-TYl" firstAttribute="top" secondItem="zWT-qW-Fp8" secondAttribute="bottom" constant="40" id="Igf-iz-H8s"/>
+                            <constraint firstItem="vyf-fB-RaJ" firstAttribute="trailing" secondItem="zWT-qW-Fp8" secondAttribute="trailing" id="KiH-By-l8P"/>
+                            <constraint firstItem="Sm1-W7-21B" firstAttribute="leading" secondItem="vyf-fB-RaJ" secondAttribute="leading" id="W0S-PZ-70n"/>
+                            <constraint firstItem="Sm1-W7-21B" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="7" id="dSa-4C-Zid"/>
+                            <constraint firstItem="zWT-qW-Fp8" firstAttribute="top" secondItem="vyf-fB-RaJ" secondAttribute="bottom" constant="23" id="e8D-PH-ZbH"/>
+                            <constraint firstItem="vyf-fB-RaJ" firstAttribute="leading" secondItem="zWT-qW-Fp8" secondAttribute="leading" id="eJC-HB-oRk"/>
+                            <constraint firstItem="zWT-qW-Fp8" firstAttribute="centerX" secondItem="9hb-UA-TYl" secondAttribute="centerX" id="grY-L9-yfy"/>
+                            <constraint firstItem="9hb-UA-TYl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="yaT-OG-2TS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageview" destination="9hb-UA-TYl" id="Dgt-jC-8tA"/>
+                        <outlet property="ponLabel" destination="zWT-qW-Fp8" id="Nxd-5g-3lN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
